@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --toastify-color-info: #3498db;
+  --background-color: rgba(250, 250, 250, 0.85);
+}
+
+*,
+::before,
+::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter;
+  background-image: linear-gradient(115deg, #3498db, rgba(136, 136, 206, 0.7)),
+    url(Background-space.avif);
+  background-attachment: fixed;
+}
+
+.form-card {
+  max-width: 450px;
+  margin: 50px auto 0px auto;
+  background-color: var(--background-color);
+  border-radius: 3px;
+}
+
+header {
+  max-width: 400px;
+  margin: 20px auto 0px auto;
+}
+
+.logo-type {
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.header-description {
+  color: var(--toastify-color-info);
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto 0px auto;
+  padding-bottom: 20px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.optional {
+  font-weight: 400;
+  font-size: smaller;
+}
+.question {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.answers {
+  margin-top: 5px;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 4px;
+}
+
+#drop-down {
+  color: grey;
+}
+.recommend-radio {
+  display: inline;
+  font-size: 14px;
+}
+
+#submit {
+  display: block;
+  margin: auto;
+  width: 125px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 23px;
+  color: white;
+  background-color: var(--toastify-color-info);
+  border: none;
+  border-radius: 3px;
+  padding: 4px 10px;
+}
+
+#submit:hover {
+  color: bisque;
+}
+
+.dead-space {
+  height: 1000px;
+}

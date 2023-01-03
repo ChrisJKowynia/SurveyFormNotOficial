@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Survey Form</title>
+</head>
+<body>
+  <div class="form-card">
+    <header>
+      <img class="logo-type" src="Ellipsis_Drive_Full_Blue_Logo.png" />
+      <h1 class="header-description">User Survey</h1>
+    </header>
+    <form>
+      <div class="form-section">
+        <label id="name-label" for="name"
+          >User Name <span class="optional">optional</span></label
+        >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="answers"
+          placeholder="Name"
+        />
+      </div>
+      <div class="form-section">
+        <label id="email-label" for="emial"
+          >Emial <span class="optional">optional</span></label
+        >
+        <input
+          type="emial"
+          id="emial"
+          name="emial"
+          class="answers"
+          placeholder="Email"
+        />
+      </div>
+      <div class="form-section">
+        <label id="drop-down-label" for="drop-down"
+          >How did you first hear about Ellipsis Drive?</label
+        >
+        <select id="drop-down" name="drop-down" class="answers" required>
+          <option disabled selected value>Select</option>
+          <option value="google-ad">Google ad</option>
+          <option value="linkedin-ad">Linkedin ad</option>
+          <option value="email-from-Ellipsis-Drive-team">Linkedin ad</option>
+          <option value="direct-mesage-form-Ellipsis-Drive-team">
+            Direct mesage form Ellipsis Drive team
+          </option>
+          <option value="other">None of these</option>
+        </select>
+      </div>
+      <div class="form-section">
+        <p class="question">Would you reccomend Ellipis Drive to your boss?</p>
+        <label>
+          <input
+            name="recommendation"
+            value="Yes"
+            type="radio"
+            class="radio-input"
+          />
+          <p class="recommend-radio">Yes</p>
+        </label>
+        <label>
+          <input
+            name="recommendation"
+            value="No"
+            type="radio"
+            class="radio-input"
+          />
+          <p class="recommend-radio">No</p>
+        </label>
+        <label>
+          <input
+            name="recommendation"
+            value="Maybe"
+            type="radio"
+            class="radio-input"
+          />
+          <p class="recommend-radio">Maybe</p>
+        </label>
+      </div>
+      <div class="form-section">
+        <button type="submit" id="submit" class="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  <div class="dead-space"></div>
+</body>
